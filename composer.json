@@ -1,9 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "elementary-interactive/the-cms",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The CMS from Elementary Interactive.",
     "keywords": [
-        "framework",
+        "cms",
+        "elementary-interactive",
         "laravel"
     ],
     "license": "MIT",
@@ -13,7 +14,8 @@
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "elemetary-interactive/the-cms-engine": "dev-staging"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -48,6 +50,10 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": {
+        "type": "composer",
+        "url": "https://repositories.elementary-interactive.com"
+    },
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
